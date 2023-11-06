@@ -1,0 +1,292 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    padding-inline: 0;
+}
+
+
+
+/* dm-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-sans-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/dm-sans-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/mulish-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  html{
+    box-sizing: border-box;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+
+  body{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #696871;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .wrapper{
+    max-width: 1112px;
+    margin: 0 auto;
+    align-items: flex-end;
+
+  }
+
+  /*Header style start*/
+  .header_wrapper{
+    max-width: 1064px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+
+  .header_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .header_logo{
+    margin-right: 120px;
+  }
+
+  .header_logo:last-child{
+    margin-right: 0;
+  }
+  /*Header style end */
+
+  
+  /*Subscription style start*/
+  .subscription{
+    padding-top: 160px;
+  }
+
+  .subscription_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+  }
+
+  .subscription_title{
+    color: #19191B;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px; 
+    margin-bottom: 30px;
+  }
+
+  .subscription_about{
+    color: #696871;
+    font-family: 'Mulish';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 459px;
+    max-height: 90px;
+    margin-bottom: 30px;
+  }
+
+  .subscription_link{
+    color: #5454D4;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    margin-bottom: 232px;
+  }
+
+  .subscription_link:hover, .subscription_link:focus, .subscription_link:active{
+    opacity: .85;
+  }
+
+  .image_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 167.5px;
+  }
+
+  .subscription_img1{
+    margin-bottom: 100px;
+  }
+
+  .text_block{
+    padding-top: 250px;
+    max-width: 556px;
+  }
+
+  /*Subscription style end*/
+
+
+
+  /* Metrics style start */
+
+    .metrics{
+        margin-bottom: 109px;
+    }
+
+    .metrics_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+
+    .metrics_image_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        margin-left: 156px;
+    
+    }
+
+    .metrics_img-behind{
+        grid-column: 1 / span 8;
+        grid-row: 1;  
+        z-index: 1;
+    }
+
+    .metrics_img-front{
+        grid-column: 4 / -1;
+        grid-row: 1;
+    }
+  /* Metrics style end */
+
+
+  /* Features style start*/
+    .features_wrap{
+        max-width: 1070px;
+        margin: 0 auto;
+    }
+
+    .features_cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 75px;
+        margin-bottom: 150px;
+    
+    }
+
+    .features_card{
+        grid-column: span 1;
+    }
+
+    .features_card-img{
+        max-height: 72px;
+        max-width: 120px;
+        margin-bottom: 20px;
+        margin-left: 120px;
+    }
+
+    .features_card-thumb{
+        display: block;
+    }
+
+    .features_card-title{
+        color: #19191B;
+        text-align: center;
+        font-family: 'DM Sans';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; 
+        margin-bottom: 20px;
+    }
+
+    .features_card-describtion{
+        color: #696871;
+        text-align: center;
+        font-family: 'Mulish';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+  /* Features style end */
